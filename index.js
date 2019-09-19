@@ -5,8 +5,8 @@ const { inject, uninject } = require('powercord/injector');
 
 module.exports = class QuickDelete extends Plugin {
   async startPlugin () {
-    this.messageClasses = (await getModule([ 'messageCompact', 'messageCozy' ]));
-    this.messageQuery = `.${this.messageClasses.message.replace(/ /g, '.')}`;
+    this.messageClasses = (await getModule([ 'container', 'messageCompact' ]));
+    this.messageQuery = `.${this.messageClasses.content.replace(/ /g, '.')}`;
     this.patchMessageContent();
   }
 
