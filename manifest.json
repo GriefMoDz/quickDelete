@@ -1,6 +1,6 @@
 {
-  "name": "Quickdelete",
-  "version": "1.2.0",
+  "name": "quickDelete",
+  "version": "1.2.1",
   "description": "Quickly delete messages by holding 'Ctrl' or 'Delete' and clicking on a message.",
   "author": "Ghostly. (+ Harley#1051)",
   "license": "GPLv3"
